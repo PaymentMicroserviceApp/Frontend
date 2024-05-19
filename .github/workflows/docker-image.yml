@@ -68,7 +68,6 @@ jobs:
         fetch-depth: 0
         persist-credentials: true
         
-
     - name: Update values.yml with new tag
       run: |
         cd deployment_repo/${{ needs.build.outputs.repo-name }}
