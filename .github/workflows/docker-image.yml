@@ -51,7 +51,7 @@ jobs:
         context: .
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ${{ steps.latesttag.outputs.tag }}
+        tags: ${{ secrets.DOCKER_USERNAME }}/${{ steps.set-repo-env.outputs.REPO_NAME }}:${{ steps.latesttag.outputs.tag }}
         labels: ${{ steps.set-repo-env.outputs.REPO_NAME }}
 
   update-deployment:
