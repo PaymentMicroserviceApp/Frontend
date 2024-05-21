@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-11
     outputs:
       repo-name: ${{ steps.set-repo-env.outputs.REPO_NAME }}
       release-tag: ${{ steps.latesttag.outputs.tag }}
