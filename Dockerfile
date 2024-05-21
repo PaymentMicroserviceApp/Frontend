@@ -1,5 +1,5 @@
 # Primera etapa: construir la aplicación
-FROM node:16.20.2 AS build
+FROM node:8.17.0 AS build
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
