@@ -12,6 +12,12 @@ jobs:
       release-tag: ${{ steps.latesttag.outputs.tag }}
 
     steps:
+
+    - name: Docker install
+      run: |
+        brew install docker
+        colima start
+        
     - name: Check out the repository
       uses: actions/checkout@v2
       with:
